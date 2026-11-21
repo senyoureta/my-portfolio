@@ -465,13 +465,38 @@ html[lang='en'] .kicker__text {
 
 /* ---------- Inline monogram (single source of truth) ---------- */
 
+[data-monogram] { position: relative; }
 .monogram {
   display: block;
   width: 100%;
   height: 100%;
   overflow: visible;
+  object-fit: contain;
 }
-.monogram__shine { transform: translateX(-30px); }
+.monogram__shine {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    110deg,
+    transparent 0%,
+    transparent 34%,
+    rgba(255, 255, 255, 0.12) 43%,
+    rgba(255, 255, 255, 0.92) 50%,
+    rgba(255, 255, 255, 0.12) 57%,
+    transparent 66%,
+    transparent 100%
+  );
+  -webkit-mask-image: url('../img/brand/senai-monogram-clean.webp');
+  mask-image: url('../img/brand/senai-monogram-clean.webp');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transform: translateX(-30px);
+}
 .monogram__shine--load {
   animation: monogram-sweep 2.2s cubic-bezier(0.22, 0.61, 0.36, 1) 1 both;
 }
@@ -481,8 +506,8 @@ html[lang='en'] .kicker__text {
   animation: monogram-sweep 2.2s cubic-bezier(0.22, 0.61, 0.36, 1) 1 both;
 }
 @keyframes monogram-sweep {
-  from { transform: translateX(10px); }
-  to   { transform: translateX(56px); }
+  from { transform: translateX(15%); }
+  to   { transform: translateX(88%); }
 }
 
 .brand {

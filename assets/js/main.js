@@ -22,15 +22,8 @@
     var template = document.getElementById('monogram-template');
     if (!template) return;
     var source = template.innerHTML;
-    document.querySelectorAll('[data-monogram]').forEach(function (mount, index) {
-      var uid = 'mono-' + (index + 1);
-      mount.innerHTML = source
-        .replace(/class="monogram__gold"/g, 'class="monogram__gold" id="' + uid + '-gold"')
-        .replace(/class="monogram__sheen"/g, 'class="monogram__sheen" id="' + uid + '-sheen"')
-        .replace(/class="monogram__mask"/g, 'class="monogram__mask" id="' + uid + '-mask"')
-        .replace(/url\(#MONO_GOLD\)/g, 'url(#' + uid + '-gold)')
-        .replace(/url\(#MONO_SHEEN\)/g, 'url(#' + uid + '-sheen)')
-        .replace(/url\(#MONO_MASK\)/g, 'url(#' + uid + '-mask)');
+    document.querySelectorAll('[data-monogram]').forEach(function (mount) {
+      mount.innerHTML = source;
     });
   }
   mountMonograms();

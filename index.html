@@ -12,11 +12,11 @@
   <meta property="og:description" content="شعار، هوية، موقع، أو صفحة هبوط. مصمم ومطوّر واحد يسلّمك الشغل، بدون وسطاء.">
   <meta property="og:image" content="assets/images/brand/senai-wordmark.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/svg+xml" id="site-favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23B8924F'/%3E%3Cstop offset='.5' stop-color='%23E3C98F'/%3E%3Cstop offset='1' stop-color='%23A9824A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%232B1F17'/%3E%3Cpath d='M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45' fill='none' stroke='url(%23g)' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/webp" href="assets/img/brand/senai-monogram-clean.webp">
   <link rel="preload" href="assets/fonts/ScheherazadeNew-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/NotoNaskhArabic-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="assets/css/styles.css?v=17">
+  <link rel="stylesheet" href="assets/css/styles.css?v=18">
   <script>
     (function () {
       var root = document.documentElement;
@@ -52,34 +52,11 @@
     <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.86-7.01ZM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
   </svg>
 
-  <!-- Reusable inline monogram. Cloned once per [data-monogram] mount by main.js. -->
+  <!-- Reusable monogram image. Cloned once per [data-monogram] mount by main.js. -->
   <template id="monogram-template">
-    <svg class="monogram" viewBox="0 0 64 64" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
-      <defs>
-        <linearGradient class="monogram__gold" x1="8" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#B8924F"/>
-          <stop offset="50%" stop-color="#E3C98F"/>
-          <stop offset="100%" stop-color="#A9824A"/>
-        </linearGradient>
-        <linearGradient class="monogram__sheen" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
-          <stop offset="50%" stop-color="#fff" stop-opacity="0.92"/>
-          <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-        </linearGradient>
-        <mask class="monogram__mask" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-          <path d="M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
-        </mask>
-      </defs>
-      <path class="monogram__letter" d="M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45" fill="none" stroke="url(#MONO_GOLD)" stroke-width="8" stroke-linecap="round"/>
-      <g mask="url(#MONO_MASK)">
-        <g class="monogram__shine monogram__shine--load">
-          <rect x="-10" y="-22" width="20" height="108" fill="url(#MONO_SHEEN)" transform="rotate(28 0 32)"/>
-        </g>
-        <g class="monogram__shine monogram__shine--hover">
-          <rect x="-10" y="-22" width="20" height="108" fill="url(#MONO_SHEEN)" transform="rotate(28 0 32)"/>
-        </g>
-      </g>
-    </svg>
+    <img class="monogram" src="assets/img/brand/senai-monogram-clean.webp" alt="" aria-hidden="true" width="810" height="1200">
+    <span class="monogram__shine monogram__shine--load" aria-hidden="true"></span>
+    <span class="monogram__shine monogram__shine--hover" aria-hidden="true"></span>
   </template>
 
   <div class="page-loader" id="page-loader" aria-hidden="true">
@@ -152,7 +129,7 @@
 
         <div class="hero__art" aria-hidden="true">
           <span class="hero__monogram">
-            <img src="assets/img/brand/senai-monogram-clean.webp" alt="" width="277" height="408">
+            <img src="assets/img/brand/senai-monogram-clean.webp" alt="" width="810" height="1200">
             <span class="hero__monogram-shine hero__monogram-shine--load"></span>
             <span class="hero__monogram-shine hero__monogram-shine--hover"></span>
           </span>
@@ -563,6 +540,6 @@
     </div>
   </div>
 
-  <script src="assets/js/main.js?v=9" defer></script>
+  <script src="assets/js/main.js?v=10" defer></script>
 </body>
 </html>
