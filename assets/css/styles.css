@@ -1625,6 +1625,9 @@ html[data-theme='dark'] .brand__wordmark,
 html[data-theme='dark'] .footer__wordmark {
   background: var(--logo-ink);
 }
+html[data-theme='light'] .footer__wordmark {
+  background: var(--bg);
+}
 .footer__logo-tag {
   font-family: var(--font-en);
   font-size: 0.44rem;
@@ -2029,6 +2032,16 @@ html.js [data-reveal].is-visible {
   .hero__title { margin-bottom: 1rem; }
   .hero__desc { margin-top: 1.2rem; }
   .hero__actions { margin-top: 1.4rem; }
+  .about__seal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__seal .monogram {
+    width: 82%;
+    height: 82%;
+    flex: none;
+  }
 }
 
 @media (max-width: 640px) {
