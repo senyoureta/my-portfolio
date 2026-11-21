@@ -532,13 +532,10 @@ html[lang='en'] .kicker__text {
   object-fit: contain;
 }
 .brand__wordmark {
-  font-family: var(--font-en);
-  font-size: clamp(1.35rem, 1.9vw, 1.75rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.17em;
-  color: var(--logo-ink, var(--ink));
-  white-space: nowrap;
+  display: block;
+  height: 44px;
+  width: auto;
+  flex: none;
 }
 .brand__tag {
   font-family: var(--font-en);
@@ -1620,12 +1617,13 @@ html[lang='en'] .contact__intro h2 {
   flex: none;
 }
 .footer__wordmark {
-  font-family: var(--font-en);
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.17em;
-  color: var(--logo-ink, var(--footer-ink));
+  display: block;
+  height: 44px;
+  width: auto;
+}
+html[data-theme='dark'] .brand__wordmark,
+html[data-theme='dark'] .footer__wordmark {
+  background: var(--logo-ink);
 }
 .footer__logo-tag {
   font-family: var(--font-en);
