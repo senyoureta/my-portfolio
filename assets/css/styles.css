@@ -664,12 +664,31 @@ html[data-theme='dark'] .theme-toggle .icon-moon { display: none; }
 /* ---------- Hero ---------- */
 
 .hero {
+  --hero-s: clamp(260px, 49svh, 352px);
+  --hero-circle: calc(var(--hero-s) * 2);
+  --hero-gap: clamp(2rem, 5vw, 5rem);
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: calc(100svh - var(--header-h));
   padding-top: clamp(1.75rem, 4vw, 3.5rem);
-  overflow: hidden;
+  overflow: clip;
+  container-type: inline-size;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: calc(var(--hero-circle) / -4);
+  width: var(--hero-circle);
+  height: var(--hero-circle);
+  transform: translateY(-50%);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+  pointer-events: none;
 }
 .hero::after {
   content: '';
@@ -689,7 +708,7 @@ html[data-theme='dark'] .theme-toggle .icon-moon { display: none; }
   grid-template-columns: minmax(0, 1.38fr) minmax(0, 1fr);
   align-items: center;
   align-content: center;
-  gap: clamp(2rem, 5vw, 5rem);
+  gap: var(--hero-gap);
   flex: 1;
   padding-block: clamp(2rem, 5vh, 4rem);
   position: relative;
@@ -728,7 +747,7 @@ html[data-theme='dark'] .theme-toggle .icon-moon { display: none; }
   grid-column: 1;
   grid-row: 1;
   margin: 0;
-  font-size: clamp(2.9rem, 4.6vw, 4.8rem);
+  font-size: clamp(2.9rem, 5.06vw, 5.28rem);
   line-height: 1.18;
   max-width: 100%;
   text-wrap: balance;
@@ -736,7 +755,7 @@ html[data-theme='dark'] .theme-toggle .icon-moon { display: none; }
 html[lang='en'] .hero__title {
   grid-column: 1;
   grid-row: 1;
-  font-size: clamp(2.7rem, 4.2vw, 4.6rem);
+  font-size: clamp(2.7rem, 4.62vw, 5.06rem);
   line-height: 1.06;
   letter-spacing: -0.01em;
   word-spacing: 0.08em;
@@ -777,6 +796,11 @@ html[lang='en'] .hero__desc {
 .hero__art {
   grid-column: 2;
   grid-row: 1 / span 3;
+  position: relative;
+  inset-inline-start: calc(
+    var(--gutter) + (100cqw - (var(--gutter) * 2) - var(--hero-gap)) / 4.76 -
+    (var(--hero-circle) / 4)
+  );
   align-self: center;
   justify-self: center;
   width: 100%;
@@ -789,7 +813,7 @@ html[lang='en'] .hero__desc {
 .hero__monogram {
   position: relative;
   display: block;
-  height: clamp(260px, calc(100svh - 300px), 460px);
+  height: var(--hero-s);
   max-height: calc(100% - 1rem);
   width: auto;
   max-width: 100%;
@@ -1873,6 +1897,7 @@ html.js [data-reveal].is-visible {
 
 @media (max-width: 1180px) {
   .header__cta { display: none; }
+  .hero { --hero-s: clamp(260px, 32svh, 280px); }
 }
 
 @media (max-width: 1099px) {
@@ -1885,6 +1910,8 @@ html.js [data-reveal].is-visible {
 }
 
 @media (max-width: 960px) {
+  .hero::before { display: none; }
+  .hero__art { inset-inline-start: 0; }
   .hero {
     min-height: auto;
     padding-top: clamp(1.5rem, 4vw, 2.5rem);
@@ -1964,11 +1991,13 @@ html.js [data-reveal].is-visible {
     grid-column: 1;
     grid-row: auto;
   }
+  .hero::before { display: none; }
   .hero__art {
     grid-column: 1;
     grid-row: auto;
     order: -1;
     margin-bottom: 0;
+    inset-inline-start: 0;
   }
   .hero__art { height: auto; }
   .hero__monogram {
