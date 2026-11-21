@@ -752,14 +752,19 @@ html[lang='en'] .hero__desc {
   align-self: center;
   justify-self: center;
   width: 100%;
+  height: 100%;
+  min-height: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .hero__monogram {
-  --mono-h: clamp(280px, 55vh, 460px);
   position: relative;
   display: block;
-  width: min(100%, calc(var(--mono-h) * 277 / 408));
+  height: clamp(260px, calc(100svh - 300px), 460px);
+  max-height: calc(100% - 1rem);
+  width: auto;
+  max-width: 100%;
   aspect-ratio: 277 / 408;
   overflow: hidden;
   line-height: 0;
@@ -1937,7 +1942,11 @@ html.js [data-reveal].is-visible {
     order: -1;
     margin-bottom: 0;
   }
-  .hero__monogram { --mono-h: clamp(140px, 34vw, 180px); }
+  .hero__art { height: auto; }
+  .hero__monogram {
+    height: clamp(140px, 34vw, 180px);
+    max-height: none;
+  }
   .hero__title { margin-bottom: 1rem; }
   .hero__desc { margin-top: 1.2rem; }
   .hero__actions { margin-top: 1.4rem; }
