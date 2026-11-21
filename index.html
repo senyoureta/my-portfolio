@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI — BRAND &amp; WEB DESIGN</title>
+  <meta name="description" content="شعار، هوية، موقع، أو صفحة هبوط. مصمم ومطوّر واحد يسلّمك الشغل، بدون وسطاء.">
+  <meta name="theme-color" content="#F5F0E6" id="theme-color-meta">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SENAI — BRAND &amp; WEB DESIGN">
+  <meta property="og:description" content="شعار، هوية، موقع، أو صفحة هبوط. مصمم ومطوّر واحد يسلّمك الشغل، بدون وسطاء.">
+  <meta property="og:image" content="assets/images/brand/senai-wordmark.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" id="site-favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23B8924F'/%3E%3Cstop offset='.5' stop-color='%23E3C98F'/%3E%3Cstop offset='1' stop-color='%23A9824A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%232B1F17'/%3E%3Cpath d='M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45' fill='none' stroke='url(%23g)' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/ScheherazadeNew-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/NotoNaskhArabic-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css?v=12">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var theme = null;
+      var lang = 'ar';
+      try {
+        theme = localStorage.getItem('senai-theme');
+        lang = localStorage.getItem('senai-lang') || 'ar';
+      } catch (e) {}
+      if (theme !== 'dark' && theme !== 'light') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      if (lang !== 'ar' && lang !== 'en') lang = 'ar';
+      var themeMeta = document.getElementById('theme-color-meta');
+      if (themeMeta) themeMeta.setAttribute('content', theme === 'dark' ? '#1A1511' : '#F5F0E6');
+      root.setAttribute('data-theme', theme);
+      root.setAttribute('lang', lang);
+      root.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+      root.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main"><span data-lang="ar">تجاوز إلى المحتوى</span><span data-lang="en">Skip to content</span></a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" width="0" height="0">
+    <symbol id="icon-arrow" viewBox="0 0 16 16"><path d="M2 8h12M9 3l5 5-5 5"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 16 16"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 16 16"><path d="M8 13.5v-11M3 7l5-5 5 5"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.86-7.01ZM12.05 20.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+  </svg>
+
+  <!-- Reusable inline monogram. Cloned once per [data-monogram] mount by main.js. -->
+  <template id="monogram-template">
+    <svg class="monogram" viewBox="0 0 64 64" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient class="monogram__gold" x1="8" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#B8924F"/>
+          <stop offset="50%" stop-color="#E3C98F"/>
+          <stop offset="100%" stop-color="#A9824A"/>
+        </linearGradient>
+        <linearGradient class="monogram__sheen" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#fff" stop-opacity="0.92"/>
+          <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <mask class="monogram__mask" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+          <path d="M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+        </mask>
+      </defs>
+      <path class="monogram__letter" d="M47 19C43 11 30 9 23 15S21 29 32 32s17 11 10 18C35 56 22 54 17 45" fill="none" stroke="url(#MONO_GOLD)" stroke-width="8" stroke-linecap="round"/>
+      <g mask="url(#MONO_MASK)">
+        <g class="monogram__shine monogram__shine--load">
+          <rect x="-10" y="-22" width="20" height="108" fill="url(#MONO_SHEEN)" transform="rotate(28 0 32)"/>
+        </g>
+        <g class="monogram__shine monogram__shine--hover">
+          <rect x="-10" y="-22" width="20" height="108" fill="url(#MONO_SHEEN)" transform="rotate(28 0 32)"/>
+        </g>
+      </g>
+    </svg>
+  </template>
+
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <span class="page-loader__mark" data-monogram></span>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="SENAI — Home">
+        <span class="brand__lockup">
+          <span class="brand__monogram" data-monogram aria-hidden="true"></span>
+          <span class="brand__wordmark" lang="en">SENAI</span>
+        </span>
+        <span class="brand__tag" lang="en">BRAND &amp; WEB DESIGN</span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="التنقل الرئيسي">
+        <a class="nav__link" href="#about"><span data-lang="ar">عنّي</span><span data-lang="en">About</span></a>
+        <a class="nav__link" href="#services"><span data-lang="ar">الخدمات</span><span data-lang="en">Services</span></a>
+        <a class="nav__link" href="#work"><span data-lang="ar">الأعمال</span><span data-lang="en">Work</span></a>
+        <a class="nav__link" href="#process"><span data-lang="ar">المنهجية</span><span data-lang="en">Process</span></a>
+        <a class="nav__link" href="#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Language / اللغة">
+          <button class="lang-switch__btn is-active" type="button" data-set-lang="ar" aria-pressed="true" aria-label="العربية">AR</button>
+          <button class="lang-switch__btn" type="button" data-set-lang="en" aria-pressed="false" aria-label="English">EN</button>
+        </div>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="التبديل إلى الوضع الليلي" title="التبديل إلى الوضع الليلي">
+          <svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="#icon-moon"></use></svg>
+          <svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="#icon-sun"></use></svg>
+        </button>
+        <a class="btn btn--header header__cta" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer">
+          <span data-lang="ar">ابدأ مشروعك</span><span data-lang="en">Start a project</span>
+          <svg class="icon icon--arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            <span data-lang="ar">اللي تحتاجه لمشروعك،<br>بشكل <em>يشبهك.</em></span>
+            <span data-lang="en">Whatever your project needs,<br>in a look that's <em>yours.</em></span>
+          </h1>
+
+          <p class="hero__desc">
+            <span data-lang="ar">شعار، هوية، موقع، أو صفحة هبوط. مصمم ومطوّر واحد يسلّمك الشغل، بدون وسطاء.</span>
+            <span data-lang="en">A logo, identity, website or landing page. One designer and developer delivers it — no middlemen.</span>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">
+              <span data-lang="ar">شوف أعمالي</span><span data-lang="en">See my work</span>
+              <svg class="icon icon--arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg>
+            </a>
+            <a class="text-link" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon--solid icon--wa" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+              <span data-lang="ar">ابدأ مشروعك على واتساب</span><span data-lang="en">Start on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <span class="hero__monogram">
+            <img src="assets/img/brand/senai-monogram-clean.webp" alt="" width="277" height="408">
+            <span class="hero__monogram-shine hero__monogram-shine--load"></span>
+            <span class="hero__monogram-shine hero__monogram-shine--hover"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="container hero__footer">
+        <ul class="hero__ticker" aria-label="الخدمات">
+          <li><span data-lang="ar">شعار وهوية بصرية</span><span data-lang="en">Logo &amp; visual identity</span></li>
+          <li><span data-lang="ar">موقع لمشروعك</span><span data-lang="en">A website for your business</span></li>
+          <li><span data-lang="ar">متجر إلكتروني</span><span data-lang="en">Online store</span></li>
+          <li><span data-lang="ar">صفحة هبوط</span><span data-lang="en">Landing page</span></li>
+          <li><span data-lang="ar">تصميم حسابات التواصل</span><span data-lang="en">Social account design</span></li>
+        </ul>
+        <a class="scroll-cue" href="#about">
+          <span data-lang="ar">اكتشف المزيد</span><span data-lang="en">Scroll to explore</span>
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <aside class="about__aside">
+          <div class="kicker">
+            <span class="kicker__num" lang="en">01</span>
+            <span class="kicker__line" aria-hidden="true"></span>
+            <span class="kicker__text"><span data-lang="ar">عنّي</span><span data-lang="en">About</span></span>
+          </div>
+          <span class="about__seal" data-monogram aria-hidden="true"></span>
+          <p class="about__aside-note" lang="en">BRAND &amp; WEB DESIGN<br>— SENAI</p>
+        </aside>
+
+        <div class="about__body">
+          <h2 id="about-title" data-reveal>
+            <span data-lang="ar">الفخامة ليست ضجيجاً.<br>إنها <em>مساحة تتنفس.</em></span>
+            <span data-lang="en">Luxury is not noise.<br>It is <em>space to breathe.</em></span>
+          </h2>
+
+          <div class="about__text" data-reveal style="--delay:.1s">
+            <p>
+              <span data-lang="ar">أنا مصمم ومطوّر مستقل، وSENAI اسم شغلي. أبدأ من فكرتك، وأحوّلها إلى حضور واضح ومتناسق.</span>
+              <span data-lang="en">I'm an independent designer and developer, and SENAI is the name I work under. I start with your idea and shape it into a clear, coherent presence.</span>
+            </p>
+            <p>
+              <span data-lang="ar">التفاصيل الصغيرة تصنع الفرق: المساحة، الخط، اللون، وطريقة وصولك لعميلك. لهذا أصمم بهدوء وعناية، وأترك للفكرة مساحة تظهر.</span>
+              <span data-lang="en">The smallest details make the difference — space, type, colour, and the way your customer meets you. So I design quietly, carefully, and let the idea breathe.</span>
+            </p>
+          </div>
+
+          <div class="about__principles">
+            <article class="principle" data-reveal style="--delay:.05s">
+              <span class="principle__num" lang="en">i.</span>
+              <h3><span data-lang="ar">هوية</span><span data-lang="en">Identity</span></h3>
+              <p><span data-lang="ar">شعار وألوان وخطوط تروي شخصية مشروعك.</span><span data-lang="en">A logo, palette and type that tell your project's character.</span></p>
+            </article>
+            <article class="principle" data-reveal style="--delay:.12s">
+              <span class="principle__num" lang="en">ii.</span>
+              <h3><span data-lang="ar">موقع</span><span data-lang="en">Website</span></h3>
+              <p><span data-lang="ar">تجربة رقمية واضحة ومريحة على كل شاشة.</span><span data-lang="en">A clear digital experience, comfortable on every screen.</span></p>
+            </article>
+            <article class="principle" data-reveal style="--delay:.19s">
+              <span class="principle__num" lang="en">iii.</span>
+              <h3><span data-lang="ar">حضور</span><span data-lang="en">Presence</span></h3>
+              <p><span data-lang="ar">صورة متناسقة تبقى مع عميلك بعد الزيارة.</span><span data-lang="en">A coherent image that stays with your customer after they leave.</span></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services__head">
+          <div>
+            <div class="kicker">
+              <span class="kicker__num" lang="en">02</span>
+              <span class="kicker__line" aria-hidden="true"></span>
+              <span class="kicker__text"><span data-lang="ar">الخدمات</span><span data-lang="en">Services</span></span>
+            </div>
+            <h2 id="services-title" data-reveal>
+              <span data-lang="ar">كل ما يحتاجه مشروعك<br>ليظهر <em>بالشكل الصحيح.</em></span>
+              <span data-lang="en">Everything your project needs<br>to show up <em>as it should.</em></span>
+            </h2>
+          </div>
+          <p class="services__intro" data-reveal style="--delay:.1s">
+            <span data-lang="ar">من الفكرة إلى الحضور، أغطي الجوانب التي تصنع الصورة الكاملة — بلغة بسيطة ونتيجة متناسقة.</span>
+            <span data-lang="en">From idea to presence, I cover the pieces that make the whole picture — in a simple language and a coherent result.</span>
+          </p>
+        </div>
+
+        <ol class="services__list">
+          <li class="service" data-reveal>
+            <span class="service__num" lang="en">01</span>
+            <h3><span data-lang="ar">تصميم المواقع الإلكترونية</span><span data-lang="en">Website Design</span></h3>
+            <p><span data-lang="ar">موقع يعرّف بمشروعك بوضوح ويترك انطباعاً يليق بك.</span><span data-lang="en">A website that introduces your project clearly and leaves an impression worthy of it.</span></p>
+          </li>
+          <li class="service" data-reveal style="--delay:.04s">
+            <span class="service__num" lang="en">02</span>
+            <h3><span data-lang="ar">المتاجر الإلكترونية</span><span data-lang="en">Online Stores</span></h3>
+            <p><span data-lang="ar">متجر مرتب وسهل، يجعل تجربة الشراء أبسط وأجمل.</span><span data-lang="en">A considered, easy store that makes buying simpler and more enjoyable.</span></p>
+          </li>
+          <li class="service" data-reveal style="--delay:.08s">
+            <span class="service__num" lang="en">03</span>
+            <h3><span data-lang="ar">صفحات الهبوط</span><span data-lang="en">Landing Pages</span></h3>
+            <p><span data-lang="ar">صفحة واحدة مركّزة تعرض فكرتك وتقود الزائر لخطوة واضحة.</span><span data-lang="en">One focused page that presents your idea and leads to a clear next step.</span></p>
+          </li>
+          <li class="service" data-reveal style="--delay:.12s">
+            <span class="service__num" lang="en">04</span>
+            <h3><span data-lang="ar">الهويات البصرية</span><span data-lang="en">Brand Identities</span></h3>
+            <p><span data-lang="ar">شعار وألوان وخطوط لعلامتك.</span><span data-lang="en">Logo, colour and type for your brand.</span></p>
+          </li>
+          <li class="service" data-reveal style="--delay:.16s">
+            <span class="service__num" lang="en">05</span>
+            <h3><span data-lang="ar">تنسيق حسابات التواصل</span><span data-lang="en">Social Media Styling</span></h3>
+            <p><span data-lang="ar">شكل متناسق لمنشوراتك، يعكس هويتك في كل تفصيل.</span><span data-lang="en">A consistent look for your posts that carries your identity into every detail.</span></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section works" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="works__head">
+          <div>
+            <div class="kicker">
+              <span class="kicker__num" lang="en">03</span>
+              <span class="kicker__line" aria-hidden="true"></span>
+              <span class="kicker__text"><span data-lang="ar">أعمال مختارة</span><span data-lang="en">Selected works</span></span>
+            </div>
+            <h2 id="work-title" data-reveal>
+              <span data-lang="ar">أربع أفكار.<br>أربع <em>شخصيات.</em></span>
+              <span data-lang="en">Four ideas.<br>Four <em>identities.</em></span>
+            </h2>
+          </div>
+          <p class="works__intro" data-reveal style="--delay:.1s">
+            <span data-lang="ar">كل مشروع بدأ من فكرة، وانتهى بحضور يشبهها. اخترت لك أربعة أعمال تعرض طريقة تفكيري في الهوية والموقع.</span>
+            <span data-lang="en">Each project began with an idea and became a presence of its own. Four selected works that show how I think about identity and digital experience.</span>
+          </p>
+        </div>
+
+        <div class="works__grid">
+          <article class="work" data-reveal>
+            <a class="work__media" href="https://ora-website-phi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="ORA — عرض المشروع">
+              <img src="assets/images/projects/ora.webp" alt="ORA — متجر مجوهرات من تصميم SENAI" width="800" height="437" loading="lazy" decoding="async">
+              <span class="work__open" aria-hidden="true"><svg class="icon"><use href="#icon-external"></use></svg></span>
+            </a>
+            <div class="work__info">
+              <div class="work__top">
+                <span class="work__cat"><span data-lang="ar">متجر مجوهرات</span><span data-lang="en">Jewelry Store</span></span>
+                <span class="work__num" lang="en">01 / 04</span>
+              </div>
+              <h3 class="work__name" lang="en">ORA</h3>
+              <p class="work__desc">
+                <span data-lang="ar">هوية مجوهرات ناعمة وتجربة تسوق أنيقة، تعرض كل قطعة بهدوء ودفء.</span>
+                <span data-lang="en">A soft jewelry identity and an elegant shopping experience that presents every piece with warmth and calm.</span>
+              </p>
+              <a class="work__link" href="https://ora-website-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <span data-lang="ar">عرض المشروع</span><span data-lang="en">View Project</span>
+                <span class="sr-only">ORA</span>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work" data-reveal style="--delay:.08s">
+            <a class="work__media" href="https://ghaim.senyoureta55255.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="GHAIM — عرض المشروع">
+              <img src="assets/images/projects/ghaim.webp" alt="GHAIM — متجر ملابس أطفال من تصميم SENAI" width="860" height="400" loading="lazy" decoding="async">
+              <span class="work__open" aria-hidden="true"><svg class="icon"><use href="#icon-external"></use></svg></span>
+            </a>
+            <div class="work__info">
+              <div class="work__top">
+                <span class="work__cat"><span data-lang="ar">أزياء أطفال</span><span data-lang="en">Kids' Fashion</span></span>
+                <span class="work__num" lang="en">02 / 04</span>
+              </div>
+              <h3 class="work__name" lang="en">GHAIM</h3>
+              <p class="work__desc">
+                <span data-lang="ar">متجر ملابس أطفال بهوية دافئة وتجربة تصفح بسيطة ومريحة.</span>
+                <span data-lang="en">A childrenswear store with a warm identity and a simple, comfortable browsing experience.</span>
+              </p>
+              <a class="work__link" href="https://ghaim.senyoureta55255.workers.dev/" target="_blank" rel="noopener noreferrer">
+                <span data-lang="ar">عرض المشروع</span><span data-lang="en">View Project</span>
+                <span class="sr-only">GHAIM</span>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work" data-reveal style="--delay:.05s">
+            <a class="work__media" href="https://hotel.senyoureta55255.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="REWA — عرض المشروع التجريبي">
+              <img src="assets/images/projects/rewa.webp" alt="REWA — مفهوم هوية فندقية من تصميم SENAI" width="800" height="385" loading="lazy" decoding="async">
+              <span class="work__badge"><span data-lang="ar">مفهوم تجريبي</span><span data-lang="en">Concept project</span></span>
+              <span class="work__open" aria-hidden="true"><svg class="icon"><use href="#icon-external"></use></svg></span>
+            </a>
+            <div class="work__info">
+              <div class="work__top">
+                <span class="work__cat"><span data-lang="ar">تجربة فندقية</span><span data-lang="en">Hospitality Concept</span></span>
+                <span class="work__num" lang="en">03 / 04</span>
+              </div>
+              <h3 class="work__name" lang="en">REWA</h3>
+              <p class="work__desc">
+                <span data-lang="ar">مفهوم لهوية فندق يقدم الهدوء كتجربة، بحضور بصري فاخر وتفاصيل دافئة.</span>
+                <span data-lang="en">A concept for a hotel brand that treats calm as an experience, with a refined visual presence and warm details.</span>
+              </p>
+              <a class="work__link" href="https://hotel.senyoureta55255.workers.dev/" target="_blank" rel="noopener noreferrer">
+                <span data-lang="ar">عرض المشروع</span><span data-lang="en">View Project</span>
+                <span class="sr-only">REWA</span>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work" data-reveal style="--delay:.12s">
+            <a class="work__media" href="https://torquaz-id.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="TORQUAZ — عرض المشروع">
+              <img src="assets/images/projects/torquaz.webp" alt="TORQUAZ — هوية بصرية لعلامة أزياء من تصميم SENAI" width="800" height="450" loading="lazy" decoding="async">
+              <span class="work__open" aria-hidden="true"><svg class="icon"><use href="#icon-external"></use></svg></span>
+            </a>
+            <div class="work__info">
+              <div class="work__top">
+                <span class="work__cat"><span data-lang="ar">هوية بصرية</span><span data-lang="en">Brand Identity</span></span>
+                <span class="work__num" lang="en">04 / 04</span>
+              </div>
+              <h3 class="work__name" lang="en">TORQUAZ</h3>
+              <p class="work__desc">
+                <span data-lang="ar">هوية بصرية لعلامة أزياء تجمع العمق الأخضر مع الذهبي الهادئ.</span>
+                <span data-lang="en">A visual identity for a fashion label, pairing deep green with quiet gold.</span>
+              </p>
+              <a class="work__link" href="https://torquaz-id.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <span data-lang="ar">عرض المشروع</span><span data-lang="en">View Project</span>
+                <span class="sr-only">TORQUAZ</span>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external"></use></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="process__head">
+          <div>
+            <div class="kicker">
+              <span class="kicker__num" lang="en">04</span>
+              <span class="kicker__line" aria-hidden="true"></span>
+              <span class="kicker__text"><span data-lang="ar">المنهجية</span><span data-lang="en">Process</span></span>
+            </div>
+            <h2 id="process-title" data-reveal>
+              <span data-lang="ar">من الفكرة إلى الإطلاق،<br>بخطوات <em>واضحة.</em></span>
+              <span data-lang="en">From idea to launch,<br>in <em>clear steps.</em></span>
+            </h2>
+          </div>
+          <p class="process__intro" data-reveal style="--delay:.1s">
+            <span data-lang="ar">بلا تعقيد، وبلا مفاجآت. تعرف في كل مرحلة أين أنا وإلى أين أمضي.</span>
+            <span data-lang="en">No complications, no surprises. At every stage, you know where I am and where I'm going.</span>
+          </p>
+        </div>
+
+        <ol class="process__grid">
+          <li class="process__step" data-reveal>
+            <span class="process__num" lang="en">01</span>
+            <h3><span data-lang="ar">أسمعك</span><span data-lang="en">I listen</span></h3>
+            <p><span data-lang="ar">أفهم فكرتك وجمهورك وما تريد أن يصل له مشروعك.</span><span data-lang="en">I understand your idea, your audience, and what you want your project to say.</span></p>
+          </li>
+          <li class="process__step" data-reveal style="--delay:.06s">
+            <span class="process__num" lang="en">02</span>
+            <h3><span data-lang="ar">أرسم الاتجاه</span><span data-lang="en">I set the direction</span></h3>
+            <p><span data-lang="ar">أحدد الهوية والأسلوب والصورة العامة قبل بدء التصميم.</span><span data-lang="en">I define the identity, style and overall image before design begins.</span></p>
+          </li>
+          <li class="process__step" data-reveal style="--delay:.12s">
+            <span class="process__num" lang="en">03</span>
+            <h3><span data-lang="ar">أصمم</span><span data-lang="en">I design</span></h3>
+            <p><span data-lang="ar">أحوّل الاتجاه إلى هوية وموقع بتفاصيل مدروسة.</span><span data-lang="en">I shape the direction into an identity and website with considered detail.</span></p>
+          </li>
+          <li class="process__step" data-reveal style="--delay:.18s">
+            <span class="process__num" lang="en">04</span>
+            <h3><span data-lang="ar">أسلّم</span><span data-lang="en">I deliver</span></h3>
+            <p><span data-lang="ar">أسلّمك النتيجة النهائية.</span><span data-lang="en">I hand over the final result.</span></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <div class="kicker">
+            <span class="kicker__num" lang="en">05</span>
+            <span class="kicker__line" aria-hidden="true"></span>
+            <span class="kicker__text"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></span>
+          </div>
+          <h2 id="contact-title" data-reveal>
+            <span data-lang="ar">فكرتك تستاهل<br>حضوراً <em>يليق بها.</em></span>
+            <span data-lang="en">Your idea deserves<br>a presence <em>of its own.</em></span>
+          </h2>
+          <p class="contact__lead" data-reveal style="--delay:.08s">
+            <span data-lang="ar">أرسل لي فكرتك على واتساب، وأبدأ من هناك. بسيطة، مباشرة، وبلا تعقيد.</span>
+            <span data-lang="en">Send me your idea on WhatsApp and I'll start from there. Simple, direct, no complications.</span>
+          </p>
+        </div>
+
+        <div class="contact__card" data-reveal style="--delay:.12s">
+          <span class="contact__seal" data-monogram aria-hidden="true"></span>
+          <span class="contact__card-label" lang="en">Direct line</span>
+          <a class="btn btn--primary btn--block btn--large" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon--solid icon--wa" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+            <span data-lang="ar">تواصل عبر واتساب</span><span data-lang="en">Talk on WhatsApp</span>
+          </a>
+          <a class="contact__phone" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer" dir="ltr" lang="en">+966 50 189 6483</a>
+          <p class="contact__note">
+            <span data-lang="ar">أرد عليك عبر واتساب، وآخذ وقتي في فهم فكرتك.</span>
+            <span data-lang="en">I reply on WhatsApp, and take the time to understand your idea.</span>
+          </p>
+          <span class="contact__card-line" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="footer__logo" href="#home" aria-label="SENAI — Home">
+          <span class="footer__lockup">
+            <span class="footer__monogram" data-monogram aria-hidden="true"></span>
+            <span class="footer__wordmark" lang="en">SENAI</span>
+          </span>
+          <span class="footer__logo-tag" lang="en">BRAND &amp; WEB DESIGN</span>
+        </a>
+        <p>
+          <span data-lang="ar">أصمم الهويات وأبني المواقع لمشاريع لها شخصيتها.</span>
+          <span data-lang="en">I design identities and build websites for projects with character.</span>
+        </p>
+      </div>
+
+      <nav class="footer__nav" aria-label="روابط سريعة">
+        <h3><span data-lang="ar">استكشف</span><span data-lang="en">Explore</span></h3>
+        <a href="#about"><span data-lang="ar">عنّي</span><span data-lang="en">About</span></a>
+        <a href="#services"><span data-lang="ar">الخدمات</span><span data-lang="en">Services</span></a>
+        <a href="#work"><span data-lang="ar">الأعمال</span><span data-lang="en">Work</span></a>
+        <a href="#process"><span data-lang="ar">المنهجية</span><span data-lang="en">Process</span></a>
+        <a href="#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+      </nav>
+
+      <div class="footer__contact">
+        <h3><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></h3>
+        <a href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--solid icon--wa" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+          <span data-lang="ar">واتساب</span><span data-lang="en">WhatsApp</span>
+        </a>
+        <a href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer" dir="ltr" lang="en">+966 50 189 6483</a>
+        <span class="footer__tag" lang="en">BRAND &amp; WEB DESIGN</span>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p><span data-lang="ar">© 2026 SENAI. جميع الحقوق محفوظة.</span><span data-lang="en">© 2026 SENAI. All rights reserved.</span></p>
+      <p class="footer__made" lang="en">LOGO · IDENTITY · WEBSITE</p>
+      <a class="footer__top" href="#home">
+        <span data-lang="ar">العودة للأعلى</span><span data-lang="en">Back to top</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow-up"></use></svg>
+      </a>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
+    <svg class="icon icon--solid" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+    <span><span data-lang="ar">واتساب</span><span data-lang="en">WhatsApp</span></span>
+  </a>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <button class="mobile-menu__scrim" type="button" data-menu-close tabindex="-1" aria-label="إغلاق القائمة"></button>
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+      <div class="mobile-menu__top">
+        <span class="mobile-menu__title" id="mobile-menu-title"><span data-lang="ar">القائمة</span><span data-lang="en">Menu</span></span>
+        <button class="icon-btn" type="button" data-menu-close aria-label="إغلاق القائمة">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="التنقل">
+        <a href="#about"><span class="mobile-nav__num" lang="en">01</span><span><span data-lang="ar">عنّي</span><span data-lang="en">About</span></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></a>
+        <a href="#services"><span class="mobile-nav__num" lang="en">02</span><span><span data-lang="ar">الخدمات</span><span data-lang="en">Services</span></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></a>
+        <a href="#work"><span class="mobile-nav__num" lang="en">03</span><span><span data-lang="ar">الأعمال</span><span data-lang="en">Work</span></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></a>
+        <a href="#process"><span class="mobile-nav__num" lang="en">04</span><span><span data-lang="ar">المنهجية</span><span data-lang="en">Process</span></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></a>
+        <a href="#contact"><span class="mobile-nav__num" lang="en">05</span><span><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></a>
+      </nav>
+
+      <div class="mobile-menu__foot">
+        <div class="mobile-menu__settings">
+          <div class="lang-switch lang-switch--menu" role="group" aria-label="Language / اللغة">
+            <button class="lang-switch__btn is-active" type="button" data-set-lang="ar" aria-pressed="true" aria-label="العربية">AR</button>
+            <button class="lang-switch__btn" type="button" data-set-lang="en" aria-pressed="false" aria-label="English">EN</button>
+          </div>
+          <button class="menu-theme" type="button" data-theme-toggle>
+            <span class="menu-theme__icon">
+              <svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="#icon-moon"></use></svg>
+              <svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="#icon-sun"></use></svg>
+            </span>
+            <span data-theme-text>الوضع الليلي</span>
+          </button>
+        </div>
+        <a class="btn btn--primary btn--block" href="https://wa.me/966501896483" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--solid icon--wa" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"></use></svg>
+          <span data-lang="ar">ابدأ مشروعك</span><span data-lang="en">Start a project</span>
+        </a>
+        <p class="mobile-menu__note" lang="en">SENAI — BRAND &amp; WEB DESIGN</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=9" defer></script>
+</body>
+</html>
